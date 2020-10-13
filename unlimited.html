@@ -370,8 +370,6 @@
 					
 					
 					
-					
-					
  <form action="https://api.staticforms.xyz/submit" method="post">
         <div class="row">
 							<div class="col-6 col-12-mobilep">
@@ -429,14 +427,17 @@
 									<input name="$Device" type="text" required="required" placeholder="Device Type" id="$Device" />
 								
 								&nbsp;
-							  	<div class="col-6 col-12-small">
-								  <input type="checkbox" required="required" id="demo-copy" name="demo-copy">
+								
+								<div class="col-6 col-12-small">
+													<input type="checkbox" required="required" id="demo-copy" name="demo-copy">
 													<label for="demo-copy">I've read and agree to the service terms.</label>
-							  </div>
+												</div>
 							  
 								
 								&nbsp;
 								
+								<!-- If we receive data in this field submission will be ignored -->
+    <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
 								
 								
     </div>
